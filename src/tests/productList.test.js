@@ -54,7 +54,7 @@ describe("productList class", () => {
    });
 
    it("should be able to delete product sucessfully", () => {
-      const deleteProduct = productList.deleteProduct();
+      const deleteProduct = productList.deleteProduct(1);
 
       expect(deleteProduct).toBeTypeOf("object");
       expect(deleteProduct.message).toBe("Product sucessfully deleted.");
